@@ -1,0 +1,13 @@
+camera: 'auxtel'
+src_site: 'tucson'
+src_log: '/lsstdata/offline/teststand/auxTel/L1Archiver/log/src-info/{dayobs_year}/src-info_{dayobs}.log'
+stor_path_split: '{dayobs}'
+ncsa_storage_prefix: '/lsstdata/offline/teststand/auxTel/L1Archiver/storage/{dayobs}'
+ncsa_rsync_log: '/lsstdata/offline/teststand/auxTel/L1Archiver/log/{dayobs}/rsync_*.log'
+ncsa_gen2_prefix: '/lsstdata/offline/teststand/auxTel/L1Archiver/gen2repo/raw'
+ncsa_gen2_registry: '/lsstdata/offline/teststand/auxTel/L1Archiver/gen2repo/registry.sqlite3'
+storage_filename_pattern: 'AT_O_{dayobs_nohyphen}_{seqnum:06}-ats-wfs_ccd.fits'
+gen2_filename_pattern: '{dayobs}/{dayobs_nohyphens}{seqnum:05}-det{detector:03}.fits'
+monitordb: '{db_root}/teststand_monitor_auxtel_archiver.sqlite3'
+write_html: True
+html_prefix: '{html_root}/auxTel/Archiver'

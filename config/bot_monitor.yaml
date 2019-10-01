@@ -1,0 +1,13 @@
+camera: 'bot'
+src_site: 'slac'
+src_log: '/lsstdata/offline/teststand/BOT/log/src-info/{dayobs_year}/src-info_{dayobs_nohyphens}.log'
+stor_path_split: '{dayobs_nohyphens}'
+ncsa_storage_prefix: '/lsstdata/offline/teststand/BOT/storage/{dayobs_nohyphens}'
+ncsa_rsync_log: '/lsstdata/offline/teststand/BOT/log/{dayobs_nohyphens}/rsync_*.log'
+ncsa_gen2_prefix: '/lsstdata/offline/teststand/BOT/gen2repo/raw'
+ncsa_gen2_registry: '/lsstdata/offline/teststand/BOT/gen2repo/registry.sqlite3'
+storage_filename_pattern: 'MC_C_{dayobs_nohyphens}_{seqnum:06}/MC_C_{dayobs_nohyphens}_{seqnum:06}_{raftname}_{detectorname}.fits'
+gen2_filename_pattern: '{run}/{raftname}/{visit}-{raftname}-{detectorname}-det{detector:03}-000.fits'
+monitordb: '{db_root}/teststand_monitor_bot.sqlite3'
+write_html: True
+html_prefix: '{html_root}/BOT'
