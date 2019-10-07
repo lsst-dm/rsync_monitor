@@ -1,6 +1,6 @@
 camera: 'bot'
 src_site: 'slac'
-src_log: '/lsstdata/offline/teststand/BOT/log/src-info/{dayobs_year}/src-info_{dayobs_nohyphens}.log'
+src_log: '/lsstdata/offline/teststand/BOT/log/src-info/{dayobs_year}/src-info_{dayobs}.log'
 stor_path_split: '{dayobs_nohyphens}'
 ncsa_storage_prefix: '/lsstdata/offline/teststand/BOT/storage/{dayobs_nohyphens}'
 ncsa_rsync_log: '/lsstdata/offline/teststand/BOT/log/{dayobs_nohyphens}/rsync_*.log'
