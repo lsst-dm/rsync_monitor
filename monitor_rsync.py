@@ -265,6 +265,7 @@ def get_ncsa_storage_info(config, ncsa_xfer_info):
     storprefix = config['ncsa_storage_prefix'].format(dayobs=config['curr_dayobs'], 
                                                    dayobs_nohyphens=config['curr_dayobs_nohyphens'])
 
+    print("TESTING")
     print(storprefix)
     for dirroot, _, files in os.walk(storprefix, topdown=False):
         print(dirroot)
@@ -400,6 +401,8 @@ def save_transfer_info(config, xfer_chunk, xfer_file):
             keys = xfer.keys()
             sql = 'insert into monitor_transfer (%s) values (%s)' % (','.join(keys), 
                                                                  ','.join([':%s' % x for x in keys]))
+            print("Error Testing: "+sql)
+            print(xfer)
             for xfer in xfer_chunk.values():
                 curs.execute(sql, xfer)
                 xfer['transfer_id'] = curs.lastrowid
